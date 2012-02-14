@@ -1,0 +1,19 @@
+!!! 5
+%html
+  %head
+    %script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', type: 'text/javascript'}
+    %script{src: media_url+'js/Zoomz.js', type: 'text/javascript'}
+    %script
+      $(function() {$('figure img').each(function() {this.onload = function() {$(this).parent().Zoomz({style: {height: 4, width: 4}});}});});
+    %link{href: media_url+'css/Zoomz.css', rel: 'stylesheet', type: 'text/css'}
+  %body
+    %h1 Take a closer look at these fruits.
+    %div
+      %figure
+        %img{src: media_url+'img/lemon1.jpg'}
+      %figure
+        %img{src: media_url+'img/lemon2.jpg'}
+      %figure
+        %img{src: media_url+'img/orange1.jpg'}
+      %figure
+        %img{src: media_url+'img/orange2.jpg'}

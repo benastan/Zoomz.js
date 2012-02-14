@@ -1,0 +1,44 @@
+body,
+html
+{
+	margin: 0;
+}
+
+div
+{
+	margin: 200px 200px;
+	position: relative;
+}
+
+h1
+{
+	font-family: helvetica neue, helvetica, sans-serif;
+	color: #536f52;
+	margin-left: 250px;
+}
+
+figure
+{
+	padding: 15px;
+	width: 100px;
+	background-color: white;
+	float: left;
+	cursor: crosshair;
+	cursor: -moz-zoom-in;
+}
+
+figure.clone.animated
+{
+	box-shadow: 0 0 10px 3px #222;
+}
+
+figure img
+{
+	width: 100%;
+	height: auto;
+}
+
+figure figcaption
+{
+	display: none;
+}
